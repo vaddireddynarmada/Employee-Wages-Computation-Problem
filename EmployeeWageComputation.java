@@ -1,13 +1,20 @@
-public class Uc1 {
+public class Uc2 {
     public static void main(String[] args) {
         int present = 1;
-        int attendance = (int) (Math.random()*100) % 2;
-        if (present == attendance) {
-            System.out.println("Present");
-        }
-        else {
-            System.out.println("Absent");
+        int wagePerHour = 20;
+        int workingHour = 0;
+        int attendance = (int) (Math.random() * 100) % 2;
 
+        if (present == attendance) {
+            System.out.println("employee is present");
+            workingHour = 8;
+
+        } else {
+            System.out.println("employee is absent");
         }
+
+        int wage = wagePerHour * workingHour;
+        System.out.println("Employee daily wage: " + wage + " Rupees.");
+
     }
 }
